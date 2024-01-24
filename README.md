@@ -41,3 +41,17 @@ The encryption process involves dividing the input file into segments, encryptin
 
 This hybrid encryption approach enhances the security of the file encryption process.
 
+`Multiparty Method` - 
+### The Three Most Common Types of Homomorphic Encryption ###
+Encrypted data can be stored safely or transferred to a third party for analysis. Depending on the type of homomorphic encryption, certain processes are possible.
+
+##### `Partial homomorphic encryption`: This method of encryption can perform one type of operation on encrypted data. For example, this type of encryption would allow data to be either added or multiplied, not both. The obvious drawback is that only one type of operation is possible.
+
+##### `Somewhat homomorphic encryption`: This method of encryption can perform more than one type of operation. Data encrypted this way could be added and multiplied, but there is a limit to the number of operations that can be accomplished.
+
+##### `Fully homomorphic encryption`: With this method of encryption, more than one type of secure computation can be performed. Additionally, there is no limit to the number of operations that can be performed.
+
+#### An Example Of Multiparty Encryption
+![Example](/image/1.png)
+![Example](/image/2.png)
+![Example](/image/3.png)

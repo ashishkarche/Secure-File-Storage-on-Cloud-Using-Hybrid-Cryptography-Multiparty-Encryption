@@ -41,7 +41,7 @@ The encryption process involves dividing the input file into segments, encryptin
 
 This hybrid encryption approach enhances the security of the file encryption process.
 
-`Multiparty Method` - 
+# `Multiparty Method` - 
 ### The Three Most Common Types of Homomorphic Encryption ###
 Encrypted data can be stored safely or transferred to a third party for analysis. Depending on the type of homomorphic encryption, certain processes are possible.
 

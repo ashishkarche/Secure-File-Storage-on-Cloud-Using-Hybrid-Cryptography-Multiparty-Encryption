@@ -1,0 +1,35 @@
+# Secure Cloud Storage System UML Overview
+
+## CloudStorageService
+Represents the service responsible for uploading and downloading files to/from the cloud.
+
+- `uploadFile(file: File): bool`: Method to upload a file.
+- `downloadFile(fileId: int): File`: Method to download a file.
+- `shareFile(fileId: int, publicKey: string): bool`: Method to share a file with multiple parties by encrypting it with their public keys.
+
+## User
+Represents a user interacting with the system.
+
+- `login(username: string, password: string): bool`: Method to log in.
+- `logout(): void`: Method to log out.
+
+## FileManager
+Manages the user's files.
+
+- `listFiles(user: User): List<File>`: Method to list the files associated with a user.
+
+## File
+Represents a file with attributes like fileId, filename, and encryptedContent.
+
+## HybridCryptoModule
+Represents the module responsible for hybrid cryptography.
+
+- `encrypt(data: string, publicKey: string): string`: Method to encrypt data.
+- `decrypt(data: string, privateKey: string): string`: Method to decrypt data.
+
+## Associations
+- **User** uses **CloudStorageService** for file management.
+- **FileManager** manages **File** instances.
+- **CloudStorageService** uses **HybridCryptoModule** for secure operations.
+- **CloudStorageService** uses **HybridCryptoModule** for secure operations, including sharing files.
+
